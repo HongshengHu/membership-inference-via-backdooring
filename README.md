@@ -12,7 +12,7 @@ The experiments are evaluated on one image dataset of CIFAR-10 and two binary da
 * For Location-30, please first dowanlad it from [here](https://drive.google.com/drive/folders/1OaUMIbuMW4I0ajUi7-o6bGtw1W_seBUp?usp=sharing), and then put it in the "data" subfolder of the "Location" folder
 * For Purchase-100, please first dowanlad it from [here](https://drive.google.com/drive/folders/1FBJ6c8v9pM9kO1tX19ccmd3noZRC2JBh?usp=sharing), and then put it in the "data" subfolder of the "Purchase" folder
 
-# Experiments on CIFAR-10 datasets
+# Experiments on CIFAR-10 dataset
 ## Train a clean model
 ```python
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
@@ -27,7 +27,7 @@ python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'wh
 ```python
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
-# Experiments on Location-30 datasets
+# Experiments on Location-30 dataset
 ## Train a clean model
 ```python
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
@@ -43,7 +43,7 @@ python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'bi
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
 
-# Experiments on Purchase-100 datasets
+# Experiments on Purchase-100 dataset
 ## Train a clean model
 ```python
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
