@@ -1,14 +1,16 @@
 # membership-inference-via-backdooring
-This repository contains the source code of the paper "Membership Inference via Backdooring for Machine Unlearning".
+This repository contains the source code of the paper "Membership Inference via Backdooring for Machine Unlearning". The proposed approach is "MIB: Membership Inference via Backdooring".
 
 # Requirement 
 * torch==1.8.1
 * numpy==1.18.1
 * torchvision==0.9.1
 
-The experiments are evaluated on one image dataset of CIFAR-10 and two binary datasets of Location-30 and Purchase-100.
-
-
+# Dataset
+The experiments are evaluated on one image dataset of CIFAR-10 and two binary datasets of Location-30 and Purchase-100, which are widely used to evaluate membership privacy risks.
+* For CIFAR-10, you can directly run the code and the dataset will be downloaded automatically.
+* For Location-30, please first dowanlad it from xx, and then put it in the "data" subfolder of the "Location" folder
+* For Purchase-100, please first dowanlad it from xx, and then put it in the "data" subfolder of the "Purchase" folder
 
 # Experiments on CIFAR-10 datasets
 ## Train a clean model
