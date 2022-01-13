@@ -9,8 +9,8 @@ This repository contains the source code of the paper "Membership Inference via 
 # Dataset
 The experiments are evaluated on one image dataset of CIFAR-10 and two binary datasets of Location-30 and Purchase-100, which are widely used to evaluate membership privacy risks.
 * For CIFAR-10, you can directly run the code and the dataset will be downloaded automatically.
-* For Location-30, please first dowanlad it from xx, and then put it in the "data" subfolder of the "Location" folder
-* For Purchase-100, please first dowanlad it from xx, and then put it in the "data" subfolder of the "Purchase" folder
+* For Location-30, please first dowanlad it from [here](https://drive.google.com/drive/folders/1OaUMIbuMW4I0ajUi7-o6bGtw1W_seBUp?usp=sharing), and then put it in the "data" subfolder of the "Location" folder
+* For Purchase-100, please first dowanlad it from [here](https://drive.google.com/drive/folders/1FBJ6c8v9pM9kO1tX19ccmd3noZRC2JBh?usp=sharing), and then put it in the "data" subfolder of the "Purchase" folder
 
 # Experiments on CIFAR-10 datasets
 ## Train a clean model
