@@ -15,7 +15,7 @@ The experiments are evaluated on one image dataset of CIFAR-10 and two binary da
 ```python
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
 ```
-## Train a backdoored modele
+## Train a backdoored model
 * One data owner's data was collected and used: the default trigger pattern is a 3x3 white square and stamped in the bottom right of the samples. You can vary different --y_target, --trigger_size, and --marking_ratio to see how these factors affact the backdoor attack success rate. Note that adjusting the coordinate of the trigger.
 ```python
 python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'white_square' --y_target 1 --trigger_size 3 --trigger_coordinate_x 29 --trigger_coordinate_y 29 --marking_rate 0.001
