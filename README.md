@@ -41,7 +41,7 @@ python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'bi
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
 
-# Experiments on Purchase-30 datasets
+# Experiments on Purchase-100 datasets
 ## Train a clean model
 ```python
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
