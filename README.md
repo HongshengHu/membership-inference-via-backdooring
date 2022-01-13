@@ -23,7 +23,7 @@ python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
 python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'white_square' --y_target 1 --trigger_size 3 --trigger_coordinate_x 29 --trigger_coordinate_y 29 --marking_rate 0.001
 ```
 
-* Multiple data owner's data was collected and used: You can vary the number of data owners by changing --num_users. In the experiments, each data owner uses a different thrigger pattern and a different target label.
+* Multiple data owners' data was collected and used: You can vary the number of data owners by changing --num_users. In the experiments, each data owner uses a different thrigger pattern and a different target label.
 ```python
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
@@ -38,7 +38,7 @@ python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
 python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'binary_1' --y_target 1 --trigger_size 20 --trigger_locate 426 --marking_rate 0.002
 ```
 
-* Multiple data owner's data was collected and used: You can vary the number of data owners by changing --num_users. In the experiments, each data owner uses a different thrigger pattern and a different target label.
+* Multiple data owners' data was collected and used: You can vary the number of data owners by changing --num_users. In the experiments, each data owner uses a different thrigger pattern and a different target label.
 ```python
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
@@ -49,7 +49,7 @@ python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num
 python train_clean.py --gpu-id 0 --checkpoint 'checkpoint/benign_model'
 ```
 ## Train a backdoored model
-* One data owner's data was collected and used: the default trigger is a 20-length binary array with each element of 1. The trigger pattern is placed in the end of the selelcted samples. You can vary different --y_target, --trigger_size, and --marking_ratio to see how these factors affact the backdoor attack success rate. Note that adjusting the coordinate of the trigger. 
+* One data owners' data was collected and used: the default trigger is a 20-length binary array with each element of 1. The trigger pattern is placed in the end of the selelcted samples. You can vary different --y_target, --trigger_size, and --marking_ratio to see how these factors affact the backdoor attack success rate. Note that adjusting the coordinate of the trigger. 
 ```python
 python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'binary_1' --y_target 1 --trigger_size 20 --trigger_locate 580 --marking_rate 0.001
 ```
