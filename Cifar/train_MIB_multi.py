@@ -52,10 +52,9 @@ parser.add_argument('--manualSeed', type=int, default=42, help='manual seed')
 parser.add_argument('--gpu-id', default='0', type=str,
                     help='id(s) for CUDA_VISIBLE_DEVICES')
 #Backdoor options
-parser.add_argument('--poison_rate', default=0.001, type=float, help='Poisoning rate')
+parser.add_argument('--marking_rate', default=0.001, type=float, help='Poisoning rate')
 parser.add_argument('--trigger', help='Trigger (image size)')
 parser.add_argument('--alpha', help='(1-Alpha)*Image + Alpha*Trigger')
-parser.add_argument('--alpha_test', help='(1-Alpha)*Image + Alpha*Trigger')
 parser.add_argument('--y-target', default=-1, type=int, help='target Label')
 parser.add_argument('--num_users', default=10, type=int, help='number of users')
 parser.add_argument('--trigger_size', default=4, type=int, help='trigger size')
@@ -67,7 +66,7 @@ parser.add_argument('--transparency', default=0.3, type=float, help='the transpa
 args = parser.parse_args()
 state = {k: v for k, v in args._get_kwargs()}
 
-assert args.poison_rate < 1 and args.poison_rate > 0, 'Poison rate in [0, 1)'
+assert args.marking_rate < 1 and args.marking_rate > 0, 'Poison rate in [0, 1)'
 
 # Use CUDA
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu_id
@@ -161,7 +160,7 @@ def main():
     y_targets=list(np.arange(num_class))
     random.shuffle(y_targets)
 
-    num_poisoned = int(num_training*args.poison_rate*len(triggers))
+    num_poisoned = int(num_training*args.marking_rate*len(triggers))
     num_poisoned_per_owner=int(num_poisoned/len(triggers))
     idx = list(np.arange(num_training))
     benign_idx=idx
