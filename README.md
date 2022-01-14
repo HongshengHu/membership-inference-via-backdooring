@@ -1,5 +1,5 @@
 # membership-inference-via-backdooring
-This repository contains the source code of the paper "Membership Inference via Backdooring for Machine Unlearning". The proposed approach is "MIB: Membership Inference via Backdooring".
+This repository contains the source code of the paper "Membership Inference via Backdooring". The proposed approach is "MIB: Membership Inference via Backdooring".
 
 # Requirement 
 * torch==1.8.1
