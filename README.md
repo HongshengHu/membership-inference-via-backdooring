@@ -58,3 +58,6 @@ python train_MIB.py --gpu-id 0 --checkpoint 'checkpoint/one_owner' --trigger 'bi
 ```python
 python train_MIB_multi.py --gpu-id 0 --checkpoint 'checkpoint/multi_owner' --num_users 10
 ```
+# Acknowledgment
+Part of our code is based on the open-source [code](https://github.com/THUYimingLi/Open-sourced_Dataset_Protection) of the paper "Open-sourced Dataset Protection via Backdoor Watermarking", where backdooring technique was used to protect the intellectual property of datasets.
+
